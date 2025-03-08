@@ -3,6 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>数字当てゲーム</title>
+    <style>
+        body {
+            background-color: lightgreen;
+            text-align: center;
+            font-size: 24px;
+            font-color: pink;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        input, button {
+            font-size: 20px;
+        }
+    </style>
     <script>
         const randomNumber = Math.floor(Math.random() * 100) + 1;
 
@@ -11,11 +25,11 @@
             const result = document.getElementById('result');
             
             if (userNumber === randomNumber) {
-                result.textContent = 'おめでとう！正解です。';
+                result.textContent = '正解！。';
             } else if (userNumber > randomNumber) {
-                result.textContent = 'もっと小さい数字です。';
+                result.textContent = 'それより小さい数字。';
             } else {
-                result.textContent = 'もっと大きい数字です。';
+                result.textContent = 'それより大きい数字です。';
             }
         }
     </script>
