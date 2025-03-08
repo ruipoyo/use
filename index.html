@@ -8,13 +8,27 @@
             background-color: lightgreen;
             text-align: center;
             font-size: 24px;
-            color: purple;
+            color: pink;
         }
         h1 {
             font-size: 36px;
         }
-        input, button {
-            font-size: 20px;
+        input {
+            font-size: 24px;
+            padding: 10px;
+            width: 200px;
+            margin: 10px;
+        }
+        button {
+            font-size: 24px;
+            padding: 15px 30px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
         }
     </style>
     <script>
@@ -37,10 +51,12 @@
 <body>
     <h1>ルミナスの数字当てゲーム</h1>
     <p>1から100までの数字を当ててね♪</p>
+    <img src="91199.jpg">
     <input type="number" id="answer" min="1" max="100">
     <button onclick="checkAnswer()">チェック</button>
     <p id="result"></p>
-    <img src="91199.jpg">
+    <img src="images/91199.jpg">
 </body>
 </html>
+
 
