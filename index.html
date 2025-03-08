@@ -25,19 +25,19 @@
             const result = document.getElementById('result');
             
             if (userNumber === randomNumber) {
-                result.textContent = '正解！。';
+                result.textContent = '正解！すんごぉい！';
             } else if (userNumber > randomNumber) {
-                result.textContent = 'それより小さい数字。';
+                result.textContent = 'それより小さい数字だよ！';
             } else {
-                result.textContent = 'それより大きい数字です。';
+                result.textContent = 'それより大きい数字だよ！！';
             }
         }
     </script>
 </head>
 <body>
     <img src="images/91199.jpg">
-    <h1>数字当てゲーム</h1>
-    <p>1から100までの数字を当ててください。</p>
+    <h1>ルミナスの数字当てゲーム</h1>
+    <p>1から100までの数字を当ててね♪</p>
     <input type="number" id="answer" min="1" max="100">
     <button onclick="checkAnswer()">チェック</button>
     <p id="result"></p>
