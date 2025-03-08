@@ -33,10 +33,12 @@
     </style>
     <script>
         const randomNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
 
         function checkAnswer() {
             const userNumber = parseInt(document.getElementById('answer').value);
             const result = document.getElementById('result');
+            attempts++;
             
             if (userNumber === randomNumber) {
                 result.textContent = '正解！すんごぉい！';
@@ -44,6 +46,12 @@
                 result.textContent = 'それより小さい数字だよ！';
             } else {
                 result.textContent = 'それより大きい数字だよ！！';
+            }
+            
+            if (attempts === 3) {
+                result.textContent = 'ばかなの？♡';
+            } else if (attempts === 5) {
+                result.textContent = 'ざーこ♡';
             }
         }
     </script>
@@ -58,5 +66,3 @@
     <img src="images/91199.jpg">
 </body>
 </html>
-
-
